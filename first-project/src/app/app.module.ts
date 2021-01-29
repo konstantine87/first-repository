@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { DirectivesExamplesComponent } from './directives-examples/directives-examples.component';
 import { MyTableComponent } from './my-table/my-table.component';
 import { SwitchExampleComponent } from './switch-example/switch-example.component';
+import { MyCardComponent } from './my-card/my-card.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SwitchExampleComponent } from './switch-example/switch-example.componen
     HomeComponent,
     DirectivesExamplesComponent,
     MyTableComponent,
-    SwitchExampleComponent
+    SwitchExampleComponent,
+    MyCardComponent
   ],
   imports: [
     BrowserModule,
