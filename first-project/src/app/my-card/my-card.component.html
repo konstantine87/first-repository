@@ -3,7 +3,7 @@
     <img src="assets/images/123.png" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">Card title {{name}}</h5>
-      <p [style.color] = "newColor" class="card-text">{{cardText}}</p>
+      <p [style.bacgroundColor] = "newColor" class="card-text">{{cardText}}</p>
       <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
   </div>
@@ -14,10 +14,13 @@
   <button class="btn btn-success" (click) = "changeText()" >change text</button>
   
   <label>Enter new color</label>
-  <button class="btn btn-danger" (click) = "changeColor()">change color</button>
+  
   <input [(ngModel)]="changeTextColor" class="form-control" type="text">
+  <button class="btn btn-danger" (click) = "changeColor()">change color</button>
 </div>
 <div class="container">
   <img src="assets/images/Community FAQs on Codecademy Exercises.jpeg" alt="">
 </div>
 
+<app-numbers-check></app-numbers-check>
+<app-my-calculator></app-my-calculator>

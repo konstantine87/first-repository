@@ -11,6 +11,9 @@ import { DirectivesExamplesComponent } from './directives-examples/directives-ex
 import { MyTableComponent } from './my-table/my-table.component';
 import { SwitchExampleComponent } from './switch-example/switch-example.component';
 import { MyCardComponent } from './my-card/my-card.component';
+import { NumbersCheckComponent } from './numbers-check/numbers-check.component';
+import { MyCalculatorComponent } from './my-calculator/my-calculator.component';
+import { MyHelloComponent } from './my-hello/my-hello.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { MyCardComponent } from './my-card/my-card.component';
     DirectivesExamplesComponent,
     MyTableComponent,
     SwitchExampleComponent,
-    MyCardComponent
+    MyCardComponent,
+    NumbersCheckComponent,
+    MyCalculatorComponent,
+    MyHelloComponent
   ],
   imports: [
     BrowserModule,
