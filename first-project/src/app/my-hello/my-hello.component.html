@@ -1,0 +1,11 @@
+<h1>Hello works</h1>
+<br><br><br>
+<div class="container">
+    <label for="input">Write some long string:</label>
+    <input type="text" [(ngModel)]="showElement">
+<button type="button" class="btn btn-danger" (click) = "showDiv()">check div</button>
+</div>
+<div class="yellow" *ngIf = "newElement">
+    <p>Hello my old friend {{showElement}}</p>
+</div>
+<app-my-numbers></app-my-numbers>

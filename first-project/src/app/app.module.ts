@@ -14,6 +14,8 @@ import { MyCardComponent } from './my-card/my-card.component';
 import { NumbersCheckComponent } from './numbers-check/numbers-check.component';
 import { MyCalculatorComponent } from './my-calculator/my-calculator.component';
 import { MyHelloComponent } from './my-hello/my-hello.component';
+import { MyNumbersComponent } from './my-numbers/my-numbers.component';
+import { MyNumbers2Component } from './my-numbers2/my-numbers2.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { MyHelloComponent } from './my-hello/my-hello.component';
     MyCardComponent,
     NumbersCheckComponent,
     MyCalculatorComponent,
-    MyHelloComponent
+    MyHelloComponent,
+    MyNumbersComponent,
+    MyNumbers2Component
   ],
   imports: [
     BrowserModule,

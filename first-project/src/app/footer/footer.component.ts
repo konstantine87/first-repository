@@ -23,7 +23,7 @@ import { Component, OnInit } from '@angular/core';
   </div>
   <div class="container" *ngFor="let item of colors; index as i">
    
-    <p>{{i}} {{item}}</p>
+    <p>{{i}}  {{item}}</p>
     
   </div>
   `,
