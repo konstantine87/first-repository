@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./my-numbers.component.css']
 })
 export class MyNumbersComponent implements OnInit {
-  public numbers = [1, 5, 10, 25]
+  
   constructor() { }
 
   ngOnInit(): void {
   }
-numbersString() {}
+
 }

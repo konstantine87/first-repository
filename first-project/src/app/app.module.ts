@@ -16,6 +16,10 @@ import { MyCalculatorComponent } from './my-calculator/my-calculator.component';
 import { MyHelloComponent } from './my-hello/my-hello.component';
 import { MyNumbersComponent } from './my-numbers/my-numbers.component';
 import { MyNumbers2Component } from './my-numbers2/my-numbers2.component';
+import { MyNamesComponent } from './my-names/my-names.component';
+import { NewCalculatorComponent } from './new-calculator/new-calculator.component';
+
+
 
 @NgModule({
   declarations: [
@@ -31,12 +35,15 @@ import { MyNumbers2Component } from './my-numbers2/my-numbers2.component';
     MyCalculatorComponent,
     MyHelloComponent,
     MyNumbersComponent,
-    MyNumbers2Component
+    MyNumbers2Component,
+    MyNamesComponent,
+    NewCalculatorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
