@@ -43,6 +43,6 @@ export class NewCalculatorComponent implements OnInit {
  zeroNums(){
    this.firstNum = 0;
    this.secondNum = 0;
-   this.result = "make some mathematics..."
+   this.result = "make some mathematick actions..."
  }
 }
