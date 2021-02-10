@@ -18,6 +18,16 @@ import { MyNumbersComponent } from './my-numbers/my-numbers.component';
 import { MyNumbers2Component } from './my-numbers2/my-numbers2.component';
 import { MyNamesComponent } from './my-names/my-names.component';
 import { NewCalculatorComponent } from './new-calculator/new-calculator.component';
+import { SelectComponentComponent } from './select-component/select-component.component';
+import { MyImageComponent } from './my-image/my-image.component';
+import { SecondPageComponent } from './second-page/second-page.component';
+import { VacancyPageComponent } from './vacancy-page/vacancy-page.component';
+import { CandidatsPageComponent } from './candidats-page/candidats-page.component';
+import { VacancyComponent } from './vacancy/vacancy.component';
+import { ZooComponent } from './zoo/zoo.component';
+import { PandaComponent } from './panda/panda.component';
+import { TigerComponent } from './tiger/tiger.component';
+import { TableAnimalsComponent } from './table-animals/table-animals.component';
 
 
 
@@ -37,7 +47,17 @@ import { NewCalculatorComponent } from './new-calculator/new-calculator.componen
     MyNumbersComponent,
     MyNumbers2Component,
     MyNamesComponent,
-    NewCalculatorComponent
+    NewCalculatorComponent,
+    SelectComponentComponent,
+    MyImageComponent,
+    SecondPageComponent,
+    VacancyPageComponent,
+    CandidatsPageComponent,
+    VacancyComponent,
+    ZooComponent,
+    PandaComponent,
+    TigerComponent,
+    TableAnimalsComponent
   ],
   imports: [
     BrowserModule,

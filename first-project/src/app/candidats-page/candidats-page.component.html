@@ -1,0 +1,23 @@
+<div class="container">
+  
+  
+  <select class="form-control" (change) ="imageChange($event)">
+      <option value="">--choose best candidat--</option>
+      <option *ngFor="let candidat of candidats" >{{candidat}}</option>
+  </select>
+<div class="container" *ngIf="show1">
+  <p>John Doe, 34 years old</p>
+  <img src="assets/images/Doe.jpg" alt="">
+</div>
+<div class="container" *ngIf="show2">
+  <p>Sulxan kvernadze, 39 years old</p>
+  <img src="assets/images/1234.jpg" alt="">
+</div>
+<div class="container" *ngIf="show3">
+  <p>Varlam Saxokia, 39 years old</p>
+  <img src="assets/images/1212.jpeg" alt="">
+</div>
+<div class="container" *ngIf="show4"></div>
+      
+</div>
+

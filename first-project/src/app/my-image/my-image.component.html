@@ -1,0 +1,9 @@
+<p>my-image works!</p>
+<div class="container">
+    <img [src]="changeUrl"alt="...">
+    <select class="form-control" (change) = "imageChange($event)">
+        <option value="">--choose--</option>
+        <option *ngFor="let image of selectImages" [value]="image">airchia</option>
+    </select>
+        
+</div>

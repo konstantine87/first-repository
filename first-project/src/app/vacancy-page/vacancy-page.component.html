@@ -1,0 +1,28 @@
+<div class="container">
+
+  <select class="form-control" (change)="showDiv($event)">
+      <option value="">--choose dream job--</option>
+      <option *ngFor="let vacancy of vacancys">{{vacancy}}</select>
+
+
+        <div class="container-1" *ngIf="show1">
+           <h1>front end</h1>
+           <p class="intresting">this job is very interesting and powerful</p>
+</div>
+
+        <div class="container-2" *ngIf="show2">
+          <h1>beck end</h1>
+          <p class="intresting">this job is an old fashioned and full of routin</p>
+</div>
+
+       <div class="container-3" *ngIf="show3">
+        <h1>full stack</h1>
+        <p class="intresting">this job is an amaizing and salary is a best of enother choices</p>
+</div>
+
+     <div class="container" *ngIf="show4">
+    </div>
+  
+      
+</div>
+

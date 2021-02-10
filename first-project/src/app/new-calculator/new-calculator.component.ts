@@ -31,7 +31,7 @@ export class NewCalculatorComponent implements OnInit {
  }
  div(){
    
-   let div = this.firstNum / this.secondNum
+   let div = this.firstNum / this.secondNum;
    this.result = div.toString();
    if(this.secondNum == 0) {
      this.newResult = "it's unpossible";
