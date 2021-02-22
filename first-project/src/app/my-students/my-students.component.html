@@ -1,0 +1,53 @@
+<p>my-students works!</p>
+<div class="container">
+  <table class="table">
+    <thead>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Last Name</th>
+      <th>Meil</th>
+      <th>City</th>
+      <th>Age</th>
+      <th>Gpi</th>
+    </thead>
+    <tbody> <tr *ngFor="let student of candidantArray">
+        <td>{{student.id}}</td>
+        <td>{{student.name}}</td>
+        <td>{{student.lastName}}</td>
+        <td>{{student.email}}</td>
+        <td>{{student.city}}</td>
+        <td>{{student.age}}</td>
+        <td>{{student.gpi}}</td>
+      </tr>
+    </tbody>
+  </table>
+    
+              <div class="form-group"> 
+                <input type="number" [(ngModel)]= "studentId"  placeholder="id"> 
+                <input type="text" [(ngModel)]="studentName" placeholder="სახელი" >
+                <input type="text" [(ngModel)]="studentLastName" placeholder="გვარი" >
+                <input type="email" [(ngModel)]="studentEmail" placeholder="მეილი" >
+                <input type="number" [(ngModel)]="studentAge" placeholder="ასაკი" >
+                <input type="text" [(ngModel)] = "studentGpi" placeholder="GPI">
+                <select   class="form-control" id="" (change)="($event)">
+          
+                    <option value="" > --აირჩიე--</option>
+                    <option  *ngFor="let city of cityArray" [value]="city" > {{city}}</option>
+                    <input type="number" [(ngModel)]="studentGpi" placeholder="GPA" >
+            
+                </select>
+                <div class="alert alert-danger" role="alert" *ngIf="show">
+                  This is a danger alert—check it out!
+                  <p>{{becouse}}</p>
+                </div>
+                <button type="button" class="btn btn-danger"(click)="addNewStudent()">add student</button>
+                <button type="button" class="btn btn-success"(click)="clearEvrithing()">clear</button>
+                
+
+     
+              </div>
+     
+     
+ 
+     
+    </div>

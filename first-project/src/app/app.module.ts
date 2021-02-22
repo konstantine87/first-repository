@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DirectivesExamplesComponent } from './directives-examples/directives-examples.component';
 import { MyTableComponent } from './my-table/my-table.component';
 import { SwitchExampleComponent } from './switch-example/switch-example.component';
@@ -28,6 +28,11 @@ import { ZooComponent } from './zoo/zoo.component';
 import { PandaComponent } from './panda/panda.component';
 import { TigerComponent } from './tiger/tiger.component';
 import { TableAnimalsComponent } from './table-animals/table-animals.component';
+import { MyStudentsComponent } from './my-students/my-students.component';
+import { MyCarComponent } from './my-car/my-car.component';
+import { ShopComponent } from './shop/shop.component';
+
+
 
 
 
@@ -57,12 +62,16 @@ import { TableAnimalsComponent } from './table-animals/table-animals.component';
     ZooComponent,
     PandaComponent,
     TigerComponent,
-    TableAnimalsComponent
+    TableAnimalsComponent,
+    MyStudentsComponent,
+    MyCarComponent,
+    ShopComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule
     
   ],
   providers: [],

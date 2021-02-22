@@ -4,10 +4,17 @@
     <th>animal</th>
     <th>weight</th>
     <th>living area</th>
-    <tbody *ngFor="let animal of animals">
+    <th>details</th>
+    <tbody> <tr *ngFor="let animal of animals">
         <td>{{animal.name}}</td>
         <td>{{animal.weight}}</td>
         <td>{{animal.livingArea}}</td>
-
+        <td><a [routerLink]="animal.link">details</a></td>
+    </tr>
     </tbody>
 </table>
+<input type="text" [(ngModel)] = "animalName">
+<input type="text" [(ngModel)] = "animalWeight">
+<input type="text" [(ngModel)] = "animalLivingArea">
+<button type="button" (click)="addNewAnimal()">add animal</button>
+

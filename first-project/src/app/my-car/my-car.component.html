@@ -1,0 +1,54 @@
+<p>my-car works!</p>
+
+<div class="container">
+
+    <table class="table">
+      <thead>
+        <th>ID</th>
+        <th>Model</th>
+        <th>Year</th>
+        <th>Color</th>
+        <th></th>
+        
+      </thead>
+      <tbody> <tr *ngFor="let car of carArray">
+          <td>{{car.id}}</td>
+          <td>{{car.name}}</td>
+          <td>{{car.year}}</td>
+          <td>{{car.color}}</td>
+          <td><button class="btn btn-danger" (click)=delete(car.id)>DELETE</button></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div class="container">
+      <div class="alert alert-danger" role="alert" *ngIf="show">
+        <strong>ERROR</strong>
+        <p>{{errorString}}</p>
+      
+    </div>
+      <form [formGroup]="carForm" (ngSubmit)="addCar()">
+        
+            <label for="id">ID</label>
+           <input type="number" formControlName="idControl" class="form-control" name="name" [attr.disabled]="true"/>
+           <label for="name">Model</label>
+           <input type="text" formControlName="nameControl" class="form-control" name="name"/>
+           <label for="name">Year</label>
+           <input type="number" formControlName="yearControl" class="form-control" name="name"/>
+           <label for="name">Color</label>
+           <select class="form-control" formControlName="colorControl">
+           <option value="">--choose--</option>
+           <option name="name" *ngFor="let color of colorArray" [value]='color' >{{color}}</option>
+          </select>
+        </form>
+      </div> 
+           
+     
+        <button type="button" type="submit" (click)= "addCar()">save</button>
+        <div class="container">
+          <div [(ngModel)]="showText"></div>
+      <input type="number" [(ngModel)]="changeYear">
+      <button type="button" class="btn btn-success" >check</button>
+    </div>
+    
+  

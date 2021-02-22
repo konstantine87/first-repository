@@ -1,0 +1,55 @@
+<p>shop works!</p>
+<table class="table">
+    <thead>
+        <th>ID</th>
+        <th>name</th>
+        <th>price</th>
+        <th>supplies</th>
+        <th>Category</th>
+        <th></th>
+        <th></th>
+</thead>
+<tbody>
+    <tr *ngFor="let item of shopItemsArray">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.price}}</td>
+        <td>{{item.supplies}}</td>
+        <td>{{item.category}}</td>
+        <td><button class="btn btn-danger" (click)=delete(item.id)>X</button></td>
+        <td><button class="btn btn-warning" (click)=check(item.id)>!</button></td>
+    </tr>
+</tbody>
+</table>
+<div class="container">
+    <input type="number" class="form-control" [(ngModel)]="inputId">
+</div>
+
+<form class="form-control" [formGroup]="shopForm" (ngSubmit)="addItem()">
+    <label for="id">id</label>
+    <input type="number" formControlName="idControl" class="form-control" [attr.disabled]="true">
+    <label for="name">Name</label>
+    <input type="text" formControlName="nameControl" class= "form-control">
+    <label for="price">Price</label>
+    <input type="number" formControlName="priceControl" class= "form-control">
+    <label for="Supplies">Supplies</label>
+    <input type="text" formControlName="suppliesControl" class= "form-control">
+    <label for="name">category</label>
+    <select class="form-control" formControlName = "categoryControl">
+        <option value="">--choose--</option>
+        <option *ngFor="let category of categorys" [value] = 'category'>{{category}}</option>
+    </select>
+</form>
+<div class="container">
+    <button type="submit" class="btn btn-primary" (click)="addItem()">save</button>
+</div>
+    <div class="alert alert-danger" role="alert" *ngIf="show">
+        <strong>ERROR</strong>
+        <p>{{errorString}}</p>
+        </div>
+        
+
+
+
+
+
